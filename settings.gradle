@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='ProjectDB_CursorAdapter'
+rootProject.name='Project_AdaperView'
