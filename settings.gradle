@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='MovieDB_0902'
+rootProject.name='CookMap'
