@@ -4,20 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
+    <CheckBox
+        android:id="@+id/Enabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enabled 속성"/>
 
-    <com.google.android.material.tabs.TabLayout
+    <CheckBox
+        android:id="@+id/Clickable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clickable 속성"/>
+
+    <CheckBox
+        android:id="@+id/H45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="45도 회전"/>
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tabLayout">
+        android:text="Button"/>
 
-    </com.google.android.material.tabs.TabLayout>
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
 
 </LinearLayout>
