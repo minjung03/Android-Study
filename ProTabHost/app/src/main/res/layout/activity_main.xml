@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@android:id/tabhost">
+
+    <!-- TabWidget은 옛 버전 요즘은 tabLayout를 사용-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/line"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs">
+            <!-- 자바에서 탭들을 생성해서 추가할 것! 이거는 영역만 잡은 것-->
+        </TabWidget>
+
+        <!--tabcontent 탭이 선택되면 보여질 것-->
+        <FrameLayout android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="#dddddd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/tabSong">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="방탄소년단"
+                    android:textSize="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#ffff00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/tabArtist">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="BTS"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#00ff00"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:id="@+id/tabAlbum">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bts"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</TabHost>

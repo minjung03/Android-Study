@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="메뉴1"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="메뉴2"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="메뉴3"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/fram" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:textSize="45dp"
+            android:textAlignment="center"
+            android:text="메뉴1"
+            android:id="@+id/tv1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:textSize="45dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="메뉴2"
+            android:id="@+id/tv2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#dddddd"
+            android:gravity="center"
+            android:textSize="45dp"
+            android:textAlignment="center"
+            android:text="메뉴3"
+            android:id="@+id/tv3"/>
+
+    </FrameLayout>
+
+</LinearLayout>

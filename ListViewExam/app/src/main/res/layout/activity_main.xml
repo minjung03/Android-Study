@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#82E8F6"
+        android:textSize="15sp"
+        android:text="아래 목록에서 선택하세요!"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:divider="#F57F17"
+        android:dividerHeight="1dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSelect"
+            android:layout_weight="1"
+            android:text="선택"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:layout_weight="1"
+            android:text="선택 취소"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAllSel"
+            android:layout_weight="1"
+            android:text="모두 선택"/>
+    </LinearLayout>
+</LinearLayout>

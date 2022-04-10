@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/BaseLayout"
+    android:padding="5px"
+    android:orientation="vertical">
+
+<!--    <TextView
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오른쪽 위 메뉴를 선택해주세요!"/>
+
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:text="이건 버튼"/>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="각도 입력 : "/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/angle"/>
+    </LinearLayout>
+
+    <ImageView
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:src="@drawable/jeju1"/>
+
+</LinearLayout>

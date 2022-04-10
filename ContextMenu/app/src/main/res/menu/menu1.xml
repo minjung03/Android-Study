@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- item 은 id,title만 있으면 된다~-->
+    <item
+        android:id="@+id/itemRed"
+        android:title="배경색(빨강)"/>
+    <item
+        android:id="@+id/itemGreen"
+        android:title="배경색(초록)"/>
+    <item
+        android:id="@+id/itemWhite"
+        android:title="배경색(하양)"/>
+
+</menu>

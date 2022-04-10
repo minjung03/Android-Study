@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:padding="5dp"
+        android:textSize="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="주문하실 메뉴를 선택한 뒤[선택완료] 클릭해주세요."/>
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:text="* 메뉴 종류 *"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rdGroup">
+            <RadioButton
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdo1"
+                android:text="해물 파스타(9,500원)"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdo2"
+                android:text="토마토 파스타(9,000원)"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdo3"
+                android:text="까르보나라(9,500원)"/>
+        </RadioGroup>
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/ImgView"
+            android:src="@drawable/sea_pasta"/>
+    </GridLayout>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택 완료"
+        android:id="@+id/btn"/>
+
+</LinearLayout>

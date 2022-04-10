@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="첫번째 프레그먼트"
+            android:textSize="20sp"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Edit1"
+            android:hint="숫자1 입력"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Edit2"
+            android:hint="숫자2 입력"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="더하기"
+            android:id="@+id/btnAdd"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="빼기"
+            android:id="@+id/btnOdd"
+            android:layout_margin="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="곱하기"
+            android:id="@+id/btnMul"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계산 결과 : "
+            android:textSize="20dp"
+            android:id="@+id/TextResult"
+            android:textColor="#FF0000"/>
+    </LinearLayout>
+</LinearLayout>

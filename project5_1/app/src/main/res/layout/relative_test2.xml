@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="기준위젯"/>
+
+    <!--  (기준위젯 바깥쪽은 to-, Baseline 등의 속성이 있다.) -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/baseBtn"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:text="1번"/>
+
+    <!-- layout_alignBaseline 가운데 layout_toLeftOf 왼쪽-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/baseBtn"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:text="2번"/>
+
+    <!-- layout_above 위쪽 layout_alignLeft 왼쪽-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/baseBtn"
+        android:layout_alignLeft="@+id/baseBtn"
+        android:text="4번"/>
+
+    <!-- layout_below 아래쪽  layout_alignRight 오른쪽-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/baseBtn"
+        android:layout_below="@+id/baseBtn"
+        android:text="5번"/>
+
+    <!-- layout_above 위쪽 layout_toRightOf 오른쪽 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/baseBtn"
+        android:layout_toRightOf="@+id/baseBtn"
+        android:text="6번"/>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자 1"
+        android:id="@+id/edtNum1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="숫자 2"
+        android:id="@+id/edtNum2"/>
+
+    <RadioGroup
+        android:id="@+id/rgCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더하기"
+            android:id="@+id/rdoSum"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="빼기"
+            android:id="@+id/rdoOdd"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="곱하기"
+            android:id="@+id/rdoMul"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나누기"
+            android:id="@+id/rdoDiv"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRe"
+        android:text="계산하기"/>
+
+    <!--
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNewActivity"
+        android:text="더하기"/>
+    -->
+</LinearLayout>

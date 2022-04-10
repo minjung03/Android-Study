@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:foreground="@drawable/dog"
+    android:foregroundGravity="center|fill_horizontal">
+
+    <!-- 프레임은 단독으로는 잘 안씀! 다른 레이아웃과 혼용해서 많이 사용한다-->
+
+    <RatingBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cat"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="체크박스 입력"
+        android:textSize="30dp"/>
+
+</FrameLayout>
